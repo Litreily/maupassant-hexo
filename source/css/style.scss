@@ -275,6 +275,16 @@ div {
         h3 {
             margin: 1.4em 0 1.1em;
         }
+
+        // start by @litreily
+        pre{
+            font-size: 14px;
+        }
+        code{
+            font-size: 0.8em !important;
+        }
+        // end
+
         pre code {
             padding: 0 2em;
         }
@@ -469,31 +479,43 @@ div {
     }
 }
 
-blockquote,.stressed {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 2.5em 0;
-    padding: 0 0 0 50px;
-    color: #555;
-    border-left: none;
+blockquote {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 0 20px;
+  color: #777;
+  border-left: 4px solid #ddd; }
+
+blockquote.stressed {
+  border-left: none;
+  padding-left: 50px;
+  color: #555;
+  display: block;
 }
-blockquote::before,.stressed-quote::before {
-    content: "\201C";
-    display: block;
-    font-family: times;
-    font-style: normal;
-    font-size: 48px;
-    color: #444;
-    font-weight: bold;
-    line-height: 30px;
-    margin-left: -50px;
-    position: absolute;
+
+blockquote.stressed:before {
+  content: "\201C";
+  display: block;
+  font-family: times;
+  font-style: normal;
+  font-size: 48px;
+  color: #444;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: -50px;
+  position: absolute;
 }
+
 strong,b,em {
     font-weight: bold;
 }
 pre {
     margin:2em 0;
+    // add by @litreily
+    font-size: 0.8em;
+    background-color: #F7F7F7;
+    padding: 8px;
 }
 .hidden1 {
     display: none;
@@ -777,7 +799,7 @@ pre {
 }
 #process .present {
   position: absolute;
-  top: -3%;
+  top: -6%;
   right: 0;
   margin-top: -20px;
   line-height: 100%;
@@ -1725,4 +1747,127 @@ em.search-keyword {
     li {
         margin: 8px 0;
     }
+}
+
+/* update by litreily */
+pre.poemText{
+  text-align: center;
+}
+pre.descriptions{
+    border-left: 3px solid #4996D1;
+    border-radius: 0 !important;
+    background-color: rgba(255,255,255,0) !important;
+    margin-left: 2em;
+}
+
+.tagBlack a, .tagGrey a{
+    text-decoration: none !important;
+    transition: background-color .2s ease;
+    padding: .4em .6em;
+    margin: 0 3px 3px 0;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 12px;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 4px;
+}
+.tagBlack a{
+    color: #FFF;
+    background-color: #2f3337;
+    &:hover{
+        color: #FFF;
+        background-color: #0C0D0E;
+    }
+}
+.tagGrey a{
+    color: #535a60;
+    background-color: #eff0f1;
+    border-color: #d6d9dc;
+    &:hover{
+        color: #535a60;
+        background-color: #D6D9DC;
+    }
+}
+
+.smallTitle {
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+
+/* update by litreily */
+pre.poemText{
+  text-align: center;
+}
+pre.descriptions{
+    border-left: 3px solid #4996D1;
+    border-radius: 0 !important;
+    background-color: rgba(255,255,255,0) !important;
+    margin-left: 2em;
+}
+
+.tagBlack a, .tagGrey a{
+    text-decoration: none !important;
+    transition: background-color .2s ease;
+    padding: .4em .6em;
+    margin: 0 3px 3px 0;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 12px;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 4px;
+}
+.tagBlack a{
+    color: #FFF;
+    background-color: #2f3337;
+    &:hover{
+        color: #FFF;
+        background-color: #0C0D0E;
+    }
+}
+.tagGrey a{
+    color: #535a60;
+    background-color: #eff0f1;
+    border-color: #d6d9dc;
+    &:hover{
+        color: #535a60;
+        background-color: #D6D9DC;
+    }
+}
+
+.smallTitle {
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+
+// display wechat
+a.weixin {
+    position: relative;
+}
+
+.weixin img {
+  position: absolute;
+  padding: 0 !important;
+  z-index: 99;
+  bottom: -110px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  transform: scale(0);
+  transform-origin: top right;
+  opacity: 0;
+  border: .2rem solid #0085ba;
+  box-shadow: 1px 1px 5px #555;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+}
+
+.weixin:hover img {
+    transform: scale(1);
+    opacity: 1;
 }
