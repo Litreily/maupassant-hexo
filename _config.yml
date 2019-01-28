@@ -5,10 +5,10 @@ changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 gitment:
   enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner: litreily ## Your GitHub ID, e.g. username
-  repo: litreily.top ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
-  client_id: 8f2b0f05d701db0460d4 ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret: deea3869127c8686a3cb31eb5219827318b577cd ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  owner: ## Your GitHub ID, e.g. username
+  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
   enable: false ## If you want to use Gitment comment system please set the value to true.
   owner:  ## Your GitHub ID, e.g. username
@@ -18,8 +18,8 @@ gitalk:
   admin:  ## Github repo owner and collaborators, only these guys can initialize github issues.
 valine: ## https://valine.js.org
   enable: true ## If you want to use Valine comment system, please set the value to true.
-  appid: 1ecKy4yk4u1R7C4tScKbnyq9-gzGzoHsz ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
-  appkey: uvA3xgqNW3q8TGR483lxXcpB ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+  appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+  appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
   notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
   verify: false ## Validation code.
   placeholder: "ヾﾉ≧∀≦)o Come on, say something..." ## Comment box placeholders.
@@ -89,20 +89,24 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: smslit-水木十里
-    url: https://www.smslit.top
+  - title: site1-name
+    url: https://www.example1.com
+  - title: site2-name
+    url: https://www.example2.com
+  - title: site3-name
+    url: https://www.example3.com
 
 timeline:
   - num: 1
-    word: 2016/04/04 - 开始我的博客之路
+    word: 2016/04/04 - start
   - num: 2
-    word: 2016/12/12 - 更新主题至 primer，使用多说评论
+    word: 2016/12/12 - AAAA
   - num: 3
-    word: 2017/03/23 - 因多说将要停止更新，改用Disqus
+    word: 2017/03/23 - BBBB
   - num: 4
-    word: 2017/04/29 - 更新主题至 manupassant
+    word: 2017/04/29 - CCCC
   - num: 5
-    word: 2017/07/20 - 大道至简，去除博客的Disqus评论功能，百度统计功能及不蒜子流量统计功能
+    word: 2017/07/20 - DDDD
 
 # Static files
 js: js
